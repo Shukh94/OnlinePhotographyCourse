@@ -387,6 +387,40 @@ header::before {
     border-radius: 15px;
     transition: .4s all ease-in-out;
 }
+.course_img_one ul {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.course_img_one:hover ul {
+    opacity: 1;
+}
+
+.course_img_one ul li {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    line-height: 30px;
+    margin-right: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.course_img_one ul li:hover {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(246, 145, 101);
+}
+
 
 .course_img_one:hover::before {
     width: 100%;
